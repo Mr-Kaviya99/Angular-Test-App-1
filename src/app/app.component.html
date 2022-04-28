@@ -1,0 +1,37 @@
+<!--one way data binding
+Event Binding
+
+<input #userNameElement
+       (keyup)="showUserName(userNameElement.value)" class="user-name"
+       id=""
+       name=""
+       type="text"
+>
+{{userName}}
+Event Binding
+<br>
+<br>
+
+Attribute Binding
+
+<img src="{{imageUrl}}" alt="">
+<br>
+<img [src]="imageUrl" alt="">
+
+Attribute Binding-->
+<!--
+
+&lt;!&ndash;Two way data binding&ndash;&gt;
+
+<input class="user-name"
+       id=""
+       name=""
+       type="text"
+       [(ngModel)]="userName"
+>
+{{userName}}
+
+&lt;!&ndash;Two way data binding&ndash;&gt;
+-->
+
+<router-outlet></router-outlet>
