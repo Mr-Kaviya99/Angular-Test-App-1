@@ -12,6 +12,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {HttpManagerInterceptor} from "./modules/share/interceptor/http-manager.interceptor";
 import {ShareModule} from "./modules/share/share.module";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {DashboardModule} from "./modules/dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
@@ -19,17 +20,18 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     LoginComponent,
     SignUpComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    HttpClientModule,
-    ShareModule,
-    MatSnackBarModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        HttpClientModule,
+        ShareModule,
+        MatSnackBarModule,
+        DashboardModule
+    ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

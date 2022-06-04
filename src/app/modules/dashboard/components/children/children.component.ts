@@ -7,8 +7,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class ChildrenComponent implements OnInit {
 
-  @Input() provideData= '';
-  exportDataText: string='';
+    @Input() provideData= '';
+    exportDataText: string='';
   @Output() textEmitter: EventEmitter<string> = new EventEmitter<string>();
   constructor() { }
 

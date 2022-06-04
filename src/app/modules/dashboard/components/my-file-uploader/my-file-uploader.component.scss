@@ -1,0 +1,15 @@
+.outer-inner {
+  text-align: center;
+  border: 1px solid green;
+  width: 180px;
+  min-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-image {
+  width: 100%;
+  height: auto;
+}
